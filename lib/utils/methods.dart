@@ -16,14 +16,7 @@ getPost(instagramuser) async {
       });
 }
 
-/*
-void downloadReels() async {
-  var s = await flutterInsta
-      .downloadReels("https://www.instagram.com/p/CDlGkdZgB2y");
-  print(s);
-}
-*/
-siteyeGit(url) async {
+goToWebSite(url) async {
   if (await canLaunch(url)) {
     await launch(url);
   } else {
@@ -31,7 +24,7 @@ siteyeGit(url) async {
   }
 }
 
-mailGonder() async {
+sendMail() async {
   var url = 'mailto:' +
       'info@yazilimkaravani.net' +
       '?subject=SUPPORT | Insta Downloader&body=';

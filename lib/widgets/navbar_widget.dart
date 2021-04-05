@@ -4,7 +4,6 @@ import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:profile_picture/screens/reels_page.dart';
 import 'package:profile_picture/screens/search_page.dart';
-import 'package:profile_picture/utils/admob.dart';
 import 'package:profile_picture/widgets/appbar_widget.dart';
 import '../screens/about_page.dart';
 
@@ -15,13 +14,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
-  final AdvertService _advertService = AdvertService();
-
-  @override
-  void initState() {
-    _advertService.showBanner();
-    super.initState();
-  }
 
   void _onItemTapped(int index) {
     setState(() {
@@ -34,10 +26,7 @@ class _HomePageState extends State<HomePage> {
     List<Widget> _widgetOptions = <Widget>[
       SearchPage(),
       ReelsPage(),
-      //home(context),
-      // search(context),
       about(context),
-      //exit(context),
     ];
 
     return WillPopScope(

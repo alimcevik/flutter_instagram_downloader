@@ -220,8 +220,8 @@ class _ReelsState extends State<ReelsPage> {
       openFileFromNotification: true,
     ).whenComplete(() {
       setState(() {
-        print("indirme tamamlandı");
-        downloading = false; // set to false to stop Progress indicator
+        print("download completed");
+        downloading = false;
       });
     });
   }

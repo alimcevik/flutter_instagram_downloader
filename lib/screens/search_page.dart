@@ -98,7 +98,7 @@ class _SeaState extends State<SearchPage> {
                   FocusScope.of(context).nextFocus();
                   instagramuser = _inputSearch.text.toString();
 
-                  print("Ara " + instagramuser);
+                  print("Search " + instagramuser);
                   //getPost(instagramuser);
                   await flutterInsta.getProfileData(instagramuser);
                   setState(() {
@@ -209,7 +209,7 @@ class _SeaState extends State<SearchPage> {
                                         _setDownloadColor = Colors.grey;
                                         _setDownloadText = "Downloaded";
                                       });
-/*
+                                      /*
                                 _downloadImage(
                                   "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
                                   //  "$imageUrlState",
@@ -360,7 +360,6 @@ class _SeaState extends State<SearchPage> {
   }
 
   void download(imageUrlState) async {
-    // var myProfilePicture =  "https://marka-logo.com/wp-content/uploads/2020/04/Huawei-Logo.png";
     final taskId = await FlutterDownloader.enqueue(
       url: imageUrlState,
       savedDir: '/sdcard/Download',

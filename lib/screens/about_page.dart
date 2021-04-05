@@ -47,7 +47,7 @@ Widget about(BuildContext context) {
                   subtitle: Text("Follow us on Instagram"),
                   onTap: () {
                     socialLink = "https://instagram.com/yazilimkaravani";
-                    siteyeGit(socialLink);
+                    goToWebSite(socialLink);
                   },
                 ),
                 Container(
@@ -64,7 +64,7 @@ Widget about(BuildContext context) {
                   subtitle: Text("Contact us on LinkedIn"),
                   onTap: () {
                     socialLink = "http://linkedin.com/company/yazilim-karavani";
-                    siteyeGit(socialLink);
+                    goToWebSite(socialLink);
                   },
                 ),
                 Container(
@@ -80,7 +80,7 @@ Widget about(BuildContext context) {
                   ),
                   subtitle: Text("Write us on e-mail"),
                   onTap: () {
-                    Navigator.pushNamed(context, mailGonder());
+                    Navigator.pushNamed(context, sendMail());
                   },
                 ),
                 Container(
@@ -97,7 +97,7 @@ Widget about(BuildContext context) {
                   subtitle: Text("Visit our blog!"),
                   onTap: () {
                     socialLink = "https://yazilimkaravani.net";
-                    siteyeGit(socialLink);
+                    goToWebSite(socialLink);
                   },
                 ),
               ]),

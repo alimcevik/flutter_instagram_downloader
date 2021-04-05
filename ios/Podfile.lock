@@ -1,0 +1,40 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_downloader (0.0.1):
+    - Flutter
+  - image_downloader (0.0.1):
+    - Flutter
+  - "permission_handler (5.1.0+2)":
+    - Flutter
+  - url_launcher (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_downloader (from `.symlinks/plugins/flutter_downloader/ios`)
+  - image_downloader (from `.symlinks/plugins/image_downloader/ios`)
+  - permission_handler (from `.symlinks/plugins/permission_handler/ios`)
+  - url_launcher (from `.symlinks/plugins/url_launcher/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_downloader:
+    :path: ".symlinks/plugins/flutter_downloader/ios"
+  image_downloader:
+    :path: ".symlinks/plugins/image_downloader/ios"
+  permission_handler:
+    :path: ".symlinks/plugins/permission_handler/ios"
+  url_launcher:
+    :path: ".symlinks/plugins/url_launcher/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_downloader: 058b9c41564a90500f67f3e432e3524613a7fd83
+  image_downloader: 73e190d6c9f286f2649554051348d9cb319cd4b3
+  permission_handler: ccb20a9fad0ee9b1314a52b70b76b473c5f8dab0
+  url_launcher: 6fef411d543ceb26efce54b05a0a40bfd74cbbef
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.10.1
