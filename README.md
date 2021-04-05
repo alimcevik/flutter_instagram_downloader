@@ -3,7 +3,7 @@
 With Instagram Downloader, you can download the desired reels and profile picture for free and unlimitedly without sharing any user information.
 
 ##  Screenshots
-
+![enter image description here](https://raw.githubusercontent.com/alimcevik/flutter_instagram_downloader/main/images/screenshots.jpg )
 
 ##  Technologies
 <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="40" height="40"/> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/>
@@ -13,6 +13,8 @@ Dart & Flutter
 ## Download APP
 
 Click [here](https://play.google.com/store/apps/details?id=com.yk.profile_picture) to download from Google Play Store
+
+<a href="https://play.google.com/store/apps/details?id=com.yk.profile_picture" rel="some text">![Foo](https://raw.githubusercontent.com/alimcevik/flutter_instagram_downloader/main/images/googlePlay.png =220x85)</a>
 
 
 ## Usage
@@ -24,6 +26,10 @@ Click [here](https://play.google.com/store/apps/details?id=com.yk.profile_pictur
 |Download Files          |`Requires permission`|`Requires permission`|
 
 
+## TODO
+
+ - The file path for ios will be edited
+ - File download will be tested on real iOS device
 
 ## Setup
 
@@ -41,5 +47,5 @@ Click [here](https://play.google.com/store/apps/details?id=com.yk.profile_pictur
 - TFLite Documentation [TensorFlow Lite](https://www.tensorflow.org/lite)
 
 ##  MIT LICENSE
-[MIT LICENSE](#)
+[MIT LICENSE](https://github.com/alimcevik/flutter_instagram_downloader/blob/main/LICENSE)
 
