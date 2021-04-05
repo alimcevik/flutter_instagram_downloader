@@ -14,8 +14,7 @@ Dart & Flutter
 
 Click [here](https://play.google.com/store/apps/details?id=com.yk.profile_picture) to download from Google Play Store
 
-
-![Download](https://raw.githubusercontent.com/alimcevik/flutter_instagram_downloader/main/images/playLogo.png)
+[<img src="images/playLogo.png" width="450" >](https://play.google.com/store/apps/details?id=com.yk.profile_picture)
 
 
 ## Usage
@@ -41,7 +40,6 @@ Click [here](https://play.google.com/store/apps/details?id=com.yk.profile_pictur
 - And finally `flutter run`
 
 
-
 ## More Info
 
 - Flutter Documentation [Flutter.dev](https://flutter.dev/docs/)
@@ -49,4 +47,3 @@ Click [here](https://play.google.com/store/apps/details?id=com.yk.profile_pictur
 
 ##  MIT LICENSE
 [MIT LICENSE](https://github.com/alimcevik/flutter_instagram_downloader/blob/main/LICENSE)
-
