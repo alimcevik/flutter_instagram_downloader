@@ -14,8 +14,8 @@ Dart & Flutter
 
 Click [here](https://play.google.com/store/apps/details?id=com.yk.profile_picture) to download from Google Play Store
 
-![Download](https://raw.githubusercontent.com/alimcevik/flutter_instagram_downloader/main/images/googlePlay.png =220x85)
 
+![Download](https://raw.githubusercontent.com/alimcevik/flutter_instagram_downloader/main/images/googlePlay.png =220x85)
 
 ## Usage
 
