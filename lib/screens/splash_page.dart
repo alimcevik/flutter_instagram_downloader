@@ -1,9 +1,11 @@
+import 'package:downloader/design.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
-import 'package:profile_picture/widgets/navbar_widget.dart';
+import 'package:downloader/widgets/navbar_widget.dart';
 import 'package:flutter/services.dart';
-import 'package:profile_picture/widgets/appbar_widget.dart';
+
+final Shader linearGradient = LinearGradient(colors: <Color>[orange, pink])
+    .createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0));
 
 class SplashPage extends StatefulWidget {
   SplashPage({Key key}) : super(key: key);
@@ -44,26 +46,20 @@ class _SplashPageState extends State<SplashPage> with TickerProviderStateMixin {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Lottie.asset(
-              'assets/logo.json',
-              controller: _controller,
-              onLoaded: (composition) {
-                _controller
-                  ..duration = composition.duration
-                  ..forward();
-              },
-              width: 175,
-              reverse: false,
-              animate: false,
-              fit: BoxFit.fill,
+            Image.asset(
+              "assets/icon2.png",
+              scale: 3,
             ),
-            Text("Insta Downloader",
+            Text("Downloader",
                 style: TextStyle(
-                    fontSize: 23, color: mor, fontWeight: FontWeight.bold)),
+                  fontSize: 23,
+                  fontWeight: FontWeight.bold,
+                  foreground: Paint()..shader = linearGradient,
+                )),
             SizedBox(
               height: 20,
             ),
-            Text("Downloadable Reels & Profile Pictures",
+            Text("Download Posts, Reels and Profile Pictures",
                 style: TextStyle(
                   fontSize: 14,
                   color: Colors.grey,

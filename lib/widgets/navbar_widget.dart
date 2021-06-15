@@ -1,10 +1,10 @@
+import 'package:downloader/design.dart';
+import 'package:downloader/widgets/dialogs_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:profile_picture/screens/reels_page.dart';
-import 'package:profile_picture/screens/search_page.dart';
-import 'package:profile_picture/widgets/appbar_widget.dart';
+import 'package:downloader/screens/reels_page.dart';
+import 'package:downloader/screens/search_page.dart';
 import '../screens/about_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -43,7 +43,6 @@ class _HomePageState extends State<HomePage> {
               ),
               Container(
                 height: 80,
-                //   child: appbar(),
               )
             ],
           ),
@@ -68,54 +67,13 @@ class _HomePageState extends State<HomePage> {
               icon: Icon(Icons.info_sharp),
               label: 'About',
             ),
-            /*BottomNavigationBarItem(
-              icon: Icon(Icons.exit_to_app),
-              label: 'Exit',
-            ),*/
           ],
           currentIndex: _selectedIndex,
-          selectedItemColor: mor,
+          selectedItemColor: pink,
           unselectedItemColor: Colors.grey,
           onTap: _onItemTapped,
         ),
       ),
-    );
-  }
-
-  showAlertExitDialog(BuildContext context) {
-    Widget cancelButton = FlatButton(
-      child: Text(
-        "CANCEL",
-        style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
-      ),
-      onPressed: () {
-        Navigator.pop(context);
-      },
-    );
-    Widget continueButton = FlatButton(
-      child: Text(
-        "EXIT",
-        style: TextStyle(color: mor, fontWeight: FontWeight.bold),
-      ),
-      onPressed: () {
-        SystemNavigator.pop();
-      },
-    );
-
-    AlertDialog alert = AlertDialog(
-      title: Text("Warning"),
-      content: Text("Do you want exit to app?"),
-      actions: [
-        cancelButton,
-        continueButton,
-      ],
-    );
-
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return alert;
-      },
     );
   }
 }
