@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+
     
     <application
         android:name="io.flutter.app.FlutterApplication"
@@ -35,6 +37,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+           android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+           android:exported="false"/>
         
         <meta-data
             android:name="flutterEmbedding"
