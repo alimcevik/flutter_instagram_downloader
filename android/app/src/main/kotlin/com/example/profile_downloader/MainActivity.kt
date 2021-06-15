@@ -1,4 +1,4 @@
-package com.yk.profile_picture
+package com.downloader_posts
 
 import io.flutter.embedding.android.FlutterActivity
 
